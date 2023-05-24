@@ -1,0 +1,66 @@
+.lists{
+    padding: 0 20px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+.item1{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 10px;
+    column-gap: 20px;
+    border-radius: 20px;
+    
+}
+.item1 .img img{
+    height: 70px;
+}
+.item1 img{
+    background-color: lightseagreen;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.item1 .content .tittle{
+    font-weight: bold;
+}
+.item1 .content .des{
+    font-size: small;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+.item1 .content .price{
+    color: orange;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: small;
+    margin-top: 5px;
+}
+.item1 .count{
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    border: 1px solid lightgreen;
+    outline: none;
+}
+.item1 .content .add{
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+.item1 .content .remote{
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: none;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!-- Font Awesome Icons -->
+ <link rel="stylesheet" href="./css/all.css">
+ <script src="https://kit.fontawesome.com/9f2396a094.js" crossorigin="anonymous"></script>
+
+
+ <!-- --------- Owl-Carousel ------------------->
+ <link rel="stylesheet" href="./css/owl.carousel.min.css">
+ <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+ <!-- ------------ AOS Library ------------------------- -->
+ <link rel="stylesheet" href="./css/aos.css">
+
+ <!-- Custom Style   -->
+ <link rel="stylesheet" href="./css/Style.css">
+ <script src="app.js"></script>
+ <!-- menu -->
+ <link rel="stylesheet" href="./css/menu.css">
+ <script src="./js/main..js"></script>
+</head>
+
+<body>
+
+<!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+<nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+            <a href="#" class="text-gray">HPH</a>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <a href="./Index.html">Trang chủ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./about_me.html">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./thucdon.html">Thực đơn</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Sự kiện và Ưu đãi</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./datcho.html">Đặt chỗ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./dathang.html">Đặt hàng</a>
+                </li>
+                <li class="nav-link">
+                    
+                        <!-- search -->
+                    <ul id="search">
+                        <li id="search-items"><input type="search" name="input-search" id="input-search" placeholder="Search">
+                            <a href="./search.html"><i class="fa-solid fa-search" id="search-wide-screen"></i></a>
+                            <!-- search for mobile -->
+                            <i class="bx bx-search" id="search-mobile"></i>
+                            
+                    </li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#" class="shop"><span class="quantity">0</span><i class="fa-solid fa-cart-shopping"></i>
+                </a></li>
+                <li class="nav-link"><a href="./LG.html"><i class="fa-solid fa-right-to-bracket"></i> Login </a></li>
+                
+    
+    
+            </ul>
+        </div>
+        <div class="social text-gray">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------x---------------  Navigation --------------------------x------------------- -->
+    
+<!-- ----------------banner-------------- -->
+<div id="banner">
+    <div class="box-left">
+        <h2>
+            <span>THỨC ĂN</span>
+            <br>
+            <span>NGON</span>
+        </h2>
+        <p>Chuyên cung cấp các món ăn đảm bảo dinh dưỡng
+            hợp vệ sinh đến người dùng,phục vụ người dùng 1 cái
+            hoàn hảo nhất</p>
+        <a href="./dathang.html"><button>Mua ngay</button></a>
+    </div>
+    <div class="box-right">
+        <img src="./assets/menu/img_1.png" alt="">
+        <img src="./assets/menu/img_2.png" alt="">
+        <img src="./assets/menu/img_3.png" alt="">
+    </div>
+    <div class="to-bottom">
+        <a href="#thucdon">
+            <img src="./assets/menu/to_bottom.png" alt="" >
+        </a>
+    </div>
+</div>
+
+
+
+<!---------------------------------- Thực đơn ----------------------------------------->
+<!-- <section class="list-menu" id="thucdon">
+    <h2>Thực đơn</h2>
+    <div class="menu-background">
+        <img src="./assets/menu/background-nha-hang.jpg" alt="" width="100%"
+        style="padding-top: 20px;    max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;border-style: none;">
+    </div>
+</section> -->
+
+
+
+<!-- !-- --------------Menu-------------- --> 
+<section class="menu section-pading" data-aos="zoom-in" data-aos-delay="200" id="thucdon">
+    <div class="container">
+        <div class="row">
+            <div class="list-section-title">
+                <h2>Thực đơn</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-title">
+                <button class="menu-button active" data-title="#Menu">Menu</button>
+                <button class="menu-button" data-title="#douong">Đồ uống</button>
+                <button class="menu-button" data-title="#ruou">Rượu</button>
+                <button class="menu-button" data-title="#trang-mieng">Tráng miệng </button>
+            
+            </div>
+        </div>
+    
+
+        <div class="row justify-content">
+            <div class="menu-item-content active" id="Menu">
+                <div class="list-menu">
+                    <div class="menu-background">
+                        <img src="./assets/menu/background-nha-hang.jpg" alt="" width="100%"
+        style="padding-top: 20px;    max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;border-style: none;">
+                    </div>
+                    
+
+                </div>
+               
+            </div>
+            <!-- -------------Đồ uống-------- -->
+            <div class="menu-item-content" id="douong">
+                <div class="list-menu">
+                    <div class="menu-background">
+                        <img src="./assets/menu/menu.jpg" alt="" width="100%"
+        style="padding-top: 20px;    max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;border-style: none;">
+                    </div>
+                    
+
+                </div>
+                <!--  -->
+                
+            </div>
+            <!-------------- Rượu--------------- -->
+            <div class="menu-item-content"id="ruou">
+                <div class="list-menu">
+                    <div class="menu-background">
+                        <img src="./assets/menu/RUOU.png" alt="" width="100%"
+        style="padding-top: 20px;    max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;border-style: none;">
+                    </div>
+                    
+
+                </div>
+                <!--  -->
+               
+            </div>
+            <!-- --------------Điểm tâm---------- -->
+            <div class="menu-item-content" id="trang-mieng">
+                <div class="list-menu">
+                    <div class="menu-background">
+                        <img src="./assets/menu/cake.png" alt="" width="100%"
+        style="padding-top: 20px;    max-width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;border-style: none;">
+                    </div>
+                    
+
+                </div>
+                <!--  -->
+                
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</section>
+<script>
+const menuTitle = document.querySelector(".menu-title");
+    menuTitle.addEventListener("click",function(x) {
+        if(x.target.classList.contains("menu-button")){
+            const Target = x.target.getAttribute("data-title");
+            // console.log(Target)
+            menuTitle.querySelector(".active").classList.remove("active");
+            x.target.classList.add("active");
+            const menuItemcontent = document.querySelector(".menu");
+            menuItemcontent.querySelector(".menu-item-content.active").classList.remove("active")
+            menuItemcontent.querySelector(Target).classList.add("active")
+        }
+    })</script>
+
+<!-- ---x-----------Menu-------x------- -->
+
+ <!-- --------------------------- Footer ---------------------------------------- -->
+
+ <footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2><font style="vertical-align: inherit;">THÔNG TIN LIÊN LẠC</font></h2>
+          
+        <p class="job-title"> PHONE :0388967105</p>
+        <p class="job-title"> ADDRESS :Phú Lương, Hà Đông</p>
+        <p class="job-title"> E-MAIL :<a href="mailto:nhahanghph92@gmail.com">nhahanghph92@gmail.com</a></p>
+        
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Newsletter</h2>
+            <p>Luôn cập nhật thông tin mới nhất của chúng tôi</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./assets/instagram/1.jpg" alt="insta1">
+                <img src="./assets/instagram/4.jfif" alt="insta2">
+                <img src="./assets/instagram/5.png" alt="insta3">
+            </div>
+            <div class="flex-row">
+                <img src="./assets/instagram/6.png" alt="insta4">
+                <img src="./assets/instagram/gu_i3-1.jpg" alt="insta5">
+                <img src="./assets/instagram/7.png" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            <p>Let us be Social</p>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row">
+        <h4 class="text-gray">
+            Được thiết kế và xây dựng bởi 
+            <a href="#" target="_black">Hoàng Phương Huế 
+                </a>
+        </h4>
+    </div>
+    <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+
+<!-- -------------x------------- Footer --------------------x------------------- -->
+
+<!-- Jquery Library file -->
+<script src="./js/Jquery3.4.1.min.js"></script>
+
+<!-- --------- Owl-Carousel js ------------------->
+<script src="./js/owl.carousel.min.js"></script>
+
+<!-- ------------ AOS js Library  ------------------------- -->
+<script src="./js/aos.js"></script>
+
+<!-- Custom Javascript file -->
+<script src="./js/main.js"></script>
+
+
+</body>
+</html>

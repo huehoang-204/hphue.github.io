@@ -1,0 +1,119 @@
+
+
+:root{
+    /* -----------setup- about me------------- */
+    --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+        /*  Section 2  */
+
+        .cover {
+            padding-top: 20px; /* khoảng cách từ khối trên */
+            width: 100%;
+            /* height: 55vmin;
+            background: url("../assets/Blog-post/ba.png");
+            background-position: -24rem -19rem;
+            background-size: 150%;
+            position: relative;
+            text-align: center; */
+
+            background-image: linear-gradient(to right bottom, rgba(142, 158, 252, .3), rgba(28, 62, 255, .3)),
+            url('../assets/BG.jpg');
+            background-size: cover;
+            background-position: top; 
+            position: relative;
+            height: 55vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    
+          }
+          
+          .cover .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            
+          }
+          
+          .cover .contents {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* khoảng cách từ phía trên của phần tử sẽ được thiết lập là 19% giá trị nhỏ nhất giữa chiều rộng và chiều cao của viewport */
+             padding-top: 19vmin;
+          }
+          
+          .cover .contents > h1 {
+            font-family: var(--Patua);
+            font-size: 6vmin;
+            color: whitesmoke;
+            text-align: center;
+            
+          
+          }
+          
+          .cover .contents > p {
+            font-family: var(--Rubik);
+            font-size: 2vmin;
+            color: #e5e5e5;
+          }
+          
+          .numbers .rect {
+            position: relative;
+            z-index: 1;
+            background: white;
+            /* font-size mặc định =16= > 17*16=272px */
+            width: 17rem;
+            height: 12rem;
+            padding-top: 3.5vmin;
+            margin: 1rem;
+            border-radius: 0.5em;
+            box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+          }
+          
+          .numbers {
+            margin-top: -15vmin;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          
+          }
+          
+          .numbers .rect h1 {
+            font-size: 5rem;  
+            text-align: center;
+            color: tomato;
+          
+          }
+          
+          .numbers .rect > p {
+            font-family: var(--Patua);
+            text-align: center;
+          }
+          
+          
+          @media only screen and (max-width: 520px) {
+         
+            
+            .section-2 .cover {
+              background-position: -25vmin -10vmin;
+            }
+            .numbers .rect {
+              width: 10rem;
+              height: 8rem;
+            }
+            .numbers .rect h1 {
+              font-size: 2rem;
+            }
+          }

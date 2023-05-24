@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap');
+        </style>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="https://kit.fontawesome.com/9f2396a094.js" crossorigin="anonymous"></script>
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/style-dathang.css">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+    
+  
+ <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+ <nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+            <a href="#" class="text-gray">HPH</a>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <a href="./Index.html">Trang chủ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./about_me.html">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./thucdon.html">Thực đơn</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Sự kiện và Ưu đãi</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./datcho.html">Đặt chỗ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./dathang.html">Đặt hàng</a>
+                </li>
+                <li class="nav-link">
+                    
+                        <!-- search -->
+                    <ul id="search">
+                        <li id="search-items"><input type="search" name="input-search" id="input-search" placeholder="Search">
+                            <a href="./search.html"><i class="fa-solid fa-search" id="search-wide-screen"></i></a>
+                            <!-- search for mobile -->
+                            <i class="bx bx-search" id="search-mobile"></i>
+                            
+                    </li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#" class="shop"><span class="quantity">0</span><i class="fa-solid fa-cart-shopping"></i>
+                </a></li>
+                <li class="nav-link"><a href="./LG.html"><i class="fa-solid fa-right-to-bracket"></i> Login </a></li>
+                
+    
+    
+            </ul>
+        </div>
+        <div class="social text-gray">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+
+
+
+    <main role="main">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <form name="frmTimKiem" method="get" action="#">
+                <h1 class="text-center">Tìm kiếm sản phẩm</h1>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <div class="text-center">
+                            <button type="button" id="btnReset" class="btn btn-warning">Xóa bộ lọc</button>
+                            <button class="btn btn-primary btn-lg">Tìm kiếm <i class="fa fa-forward"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <aside class="col-sm-4">
+                        <p>Bộ lọc </p>
+                        <div class="card">
+                            <!-- Tìm kiếm theo tên sản phẩm -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Tên sản phẩm </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm"
+                                            aria-label="Search" name="keyword_tensanpham" value="">
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Tên sản phẩm -->
+
+                            <!-- Tìm kiếm theo Loại sản phẩm -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Loại sản phẩm </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">18</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="1" id="chk-loaisanpham-1">
+                                            <label class="custom-control-label" for="chk-loaisanpham-1">Rượu</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">10</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="2" id="chk-loaisanpham-2">
+                                            <label class="custom-control-label" for="chk-loaisanpham-2">Điểm tâm</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">30</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="3" id="chk-loaisanpham-3">
+                                            <label class="custom-control-label" for="chk-loaisanpham-3">Món ăn</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">20</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="4" id="chk-loaisanpham-4">
+                                            <label class="custom-control-label" for="chk-loaisanpham-4">Đồ uống</label>
+                                        </div> <!-- form-check.// -->
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Loại sản phẩm -->
+
+            
+
+                            <!-- Tìm kiếm theo Khuyến mãi -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Khuyến mãi </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Mã khuyến mãi">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-secondary">Xác nhận</button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Nhà sản xuất -->
+
+                            <!-- Tìm kiếm theo khoảng giá tiền -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Khoảng tiền </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label>Từ</label>
+                                                <input type="range" class="custom-range" min="0" max="50000000"
+                                                    step="100000" id="sotientu" name="keyword_sotientu" value="0">
+                                                <span><span id="sotientu-text">0</span></span>
+                                            </div>
+                                            <div class="form-group col-md-6 text-right">
+                                                <label>Đến</label>
+                                                <input type="range" class="custom-range" min="0" max="50000000"
+                                                    step="100000" id="sotienden" name="keyword_sotienden"
+                                                    value="50000000">
+                                                <span><span id="sotienden-text">50000000</span></span>
+                                            </div>
+                                        </div>
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo khoảng giá tiền -->
+
+                            <!-- Tìm kiếm theo màu sắc sản phẩm -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Màu sắc (tùy chọn thêm)</h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <label class="btn btn-danger">
+                                            <input class="" type="checkbox" value="">
+                                            <span class="form-check-label">Đỏ</span>
+                                        </label>
+                                        <label class="btn btn-success">
+                                            <input class="" type="checkbox" value="">
+                                            <span class="form-check-label">Xanh lá</span>
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input class="" type="checkbox" value="">
+                                            <span class="form-check-label">Xanh dương</span>
+                                        </label>
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo màu sắc sản phẩm -->
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Tìm kiếm</button> <!-- card.// -->
+                    </aside> <!-- col.// -->
+
+                    <!-- Giải thuật duyệt và render Danh sách sản phẩm theo dòng, cột của Bootstrap -->
+                    <div class="col-sm-8 mt-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>Tìm kiếm được 7 sản phẩm</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/comchien.jpg">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Cơm hải sản</h5>
+                                        </a>
+                                       
+                                        
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                                
+                                                <b>120.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/goicuon.jfif">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Gỏi cuốn</h5>
+                                        </a>
+                                       
+                                        
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                                
+                                                <b>25.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/desuon.jfif">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Dẻ sườn bò Bản gang sốt Á</h5>
+                                        </a>
+                                        
+                                      
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                                
+                                                <b>249.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/ncchanh.jfif">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Nước ép chanh leo</h5>
+                                        </a>
+                                
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                                
+                                                <b>45.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/suachua.jfif">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Sữa chua hoa quả dầm</h5>
+                                        </a>
+                                        
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                               
+                                                <b>45.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/traicay.jfif">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Trái cây thập cẩm</h5>
+                                        </a>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                               
+                                                <b>180.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="card mb-4 shadow-sm">
+                                    <a href="product-detail.html">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="350"
+                                            src="./assets/menu/che.jfif">
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="product-detail.html">
+                                            <h5>Chè hạt sen</h5>
+                                        </a>
+                                        <h6>Máy tính bảng</h6>
+                                        <p class="card-text">Máy tính bảng Samsung Galaxy Tab 2 7.0 </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a class="btn btn-sm btn-outline-secondary"
+                                                    href="product-detail.html">Xem
+                                                    chi tiết</a>
+                                            </div>
+                                            <small class="text-muted text-right">
+                                            
+                                                <b>25.000 VNĐ</b>
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- row.// -->
+            </form>
+        </div>
+        <!-- End block content -->
+    </main>
+
+
+
+
+
+
+    
+<!-- ----x------------checkout-----x------ -->
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+  
+ <footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2><font style="vertical-align: inherit;">THÔNG TIN LIÊN LẠC</font></h2>
+          
+        <p class="job-title"> PHONE :0388967105</p>
+        <p class="job-title"> ADDRESS :Phú Lương, Hà Đông</p>
+        <p class="job-title"> E-MAIL :<a href="mailto:nhahanghph92@gmail.com">nhahanghph92@gmail.com</a></p>
+        
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Newsletter</h2>
+            <p>Luôn cập nhật thông tin mới nhất của chúng tôi</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./assets/instagram/1.jpg" alt="insta1">
+                <img src="./assets/instagram/4.jfif" alt="insta2">
+                <img src="./assets/instagram/5.png" alt="insta3">
+            </div>
+            <div class="flex-row">
+                <img src="./assets/instagram/6.png" alt="insta4">
+                <img src="./assets/instagram/gu_i3-1.jpg" alt="insta5">
+                <img src="./assets/instagram/7.png" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            <p>Let us be Social</p>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row">
+        <h4 class="text-gray">
+            Được thiết kế và xây dựng bởi 
+            <a href="#" target="_black">Hoàng Phương Huế 
+                </a>
+        </h4>
+    </div>
+    <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+    <script src="./js/dathang.js"></script> 
+    
+</body>
+</html>

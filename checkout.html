@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap');
+        </style>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="https://kit.fontawesome.com/9f2396a094.js" crossorigin="anonymous"></script>
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/style-dathang.css">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+   
+ <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+ <nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+            <a href="#" class="text-gray">HPH</a>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <a href="./Index.html">Trang chủ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./about_me.html">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./thucdon.html">Thực đơn</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Sự kiện và Ưu đãi</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./datcho.html">Đặt chỗ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./dathang.html">Đặt hàng</a>
+                </li>
+                <li class="nav-link">
+                    
+                        <!-- search -->
+                    <ul id="search">
+                        <li id="search-items"><input type="search" name="input-search" id="input-search" placeholder="Search">
+                            <a href="./search.html"><i class="fa-solid fa-search" id="search-wide-screen"></i></a>
+                            <!-- search for mobile -->
+                            <i class="bx bx-search" id="search-mobile"></i>
+                            
+                    </li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#" class="shop"><span class="quantity">0</span><i class="fa-solid fa-cart-shopping"></i>
+                </a></li>
+                <li class="nav-link"><a href="./LG.html"><i class="fa-solid fa-right-to-bracket"></i> Login </a></li>
+                
+    
+    
+            </ul>
+        </div>
+        <div class="social text-gray">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+<!-- ----------------checkout----------- -->
+<section class="form-checkout">
+    
+<h1>Thông tin thanh toán</h1>
+<form id="checkoutForm" class="checkoutForm">
+  <label for="fullName">Họ và tên:</label>
+  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Họ và tên" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" class="form-control" placeholder="email" >
+
+  <label for="kh_ngaysinh">Ngày sinh</label>
+ <input type="week" name="week" placeholder="Ngày sinh"class="form-control" placeholder="Ngày sinh" required>
+
+  <label for="phone">Số điện thoại:</label>
+  <input type="tel" id="phone" name="phone" class="form-control" placeholder="Số điện thoại" required>
+
+  <label for="kh_cmnd">CMND</label>
+  <input type="text" class="form-control" name="kh_cmnd" id="kh_cmnd" value=""
+  placeholder="CMND" >
+
+
+  <label for="kh_diachi">Địa chỉ</label>
+  <input type="text" class="form-control" name="kh_diachi" id="kh_diachi"
+      value=""  placeholder="địa chỉ" >
+
+  <h4 class="mb-3">Hình thức thanh toán</h4>
+
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="httt-1" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                    value="1">
+                                <label class="custom-control-label" for="httt-1">Tiền mặt</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                    value="2">
+                                <label class="custom-control-label" for="httt-2">Chuyển khoản</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="httt-3" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                    value="3">
+                                <label class="custom-control-label" for="httt-3">Ship COD</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Mã khuyến mãi">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary">Xác nhận</button>
+                                </div>
+                            </div>
+                        </div>
+
+  <div class="checkout-summary">
+    <p>Sản phẩm đã chọn:</p>
+    <ul id="cartItemsList" class="listCard"></ul>
+    <ul id="cartItemsList"></ul>
+    <p>Số lượng sản phẩm đã chọn: <span id="totalQuantity"></span></p>
+    <p>Tổng số tiền:</p>
+    <p id="totalAmount"></p>
+  </div>
+
+  <button type="submit" >Hoàn tất thanh toán</button>
+</form>
+
+</section>
+
+
+
+<!-- ----x------------checkout-----x------ -->
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+  
+ <footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2><font style="vertical-align: inherit;">THÔNG TIN LIÊN LẠC</font></h2>
+          
+        <p class="job-title"> PHONE :0388967105</p>
+        <p class="job-title"> ADDRESS :Phú Lương, Hà Đông</p>
+        <p class="job-title"> E-MAIL :<a href="mailto:nhahanghph92@gmail.com">nhahanghph92@gmail.com</a></p>
+        
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Newsletter</h2>
+            <p>Luôn cập nhật thông tin mới nhất của chúng tôi</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./assets/instagram/1.jpg" alt="insta1">
+                <img src="./assets/instagram/4.jfif" alt="insta2">
+                <img src="./assets/instagram/5.png" alt="insta3">
+            </div>
+            <div class="flex-row">
+                <img src="./assets/instagram/6.png" alt="insta4">
+                <img src="./assets/instagram/gu_i3-1.jpg" alt="insta5">
+                <img src="./assets/instagram/7.png" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            <p>Let us be Social</p>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row">
+        <h4 class="text-gray">
+            Được thiết kế và xây dựng bởi 
+            <a href="#" target="_black">Hoàng Phương Huế 
+                </a>
+        </h4>
+    </div>
+    <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+    <script src="./js/dathang.js"></script> 
+    
+</body>
+</html>
+
+<script>
+   const checkoutForm = document.getElementById('checkoutForm');
+  const cartItemsList = document.getElementById('cartItemsList');
+  const totalAmount = document.getElementById('totalAmount');
+  const totalQuantity = document.getElementById('totalQuantity');
+  
+  checkoutForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Lấy thông tin từ form
+  const fullName = document.getElementById('fullName').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  updateCartItems();
+
+  // Tạo đối tượng dữ liệu thanh toán
+  const paymentData = {
+    fullName,
+    email,
+    phone,
+    cartItems: JSON.parse(localStorage.getItem('cartItems')) || []
+  };
+
+
+  // Gửi dữ liệu thanh toán đến server hoặc xử lý theo nhu cầu của bạn
+  // ...
+
+  // Xóa dữ liệu giỏ hàng sau khi đã thanh toán
+  localStorage.removeItem('cartItems');
+
+  // Hiển thị thông báo thanh toán thành công
+  alert('Thanh toán thành công!');
+
+  
+
+  // Hỏi người dùng có muốn trở về trang index hay không
+  if (confirm('Bạn có muốn trở về trang chủ không?')) {
+    window.location.href = 'index.html';
+  }
+});
+  
+  function updateCartItems() {
+  // Lấy danh sách sản phẩm từ localStorage
+  const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+  // Xóa các phần tử cũ trong danh sách sản phẩm
+  cartItemsList.innerHTML = '';
+
+  // Đặt số lượng sản phẩm về 0
+  document.getElementById('totalQuantity').textContent = '0';
+
+  
+  // Xóa các phần tử cũ trong danh sách sản phẩm
+  cartItemsList.innerHTML = '';
+
+  // Thêm các phần tử mới vào danh sách sản phẩm
+  cartItems.forEach((item) => {
+    // Kiểm tra xem đối tượng item tồn tại và có thuộc tính 'name' không
+    if (item && item.name) {
+      const listItem = document.createElement('li');
+      const originalPrice = item.originalPrice ? `(${item.originalPrice.toLocaleString()} đ)` : '';
+      listItem.textContent = `${item.name}: (${item.quantity}) || ${item.price.toLocaleString()} đ`;
+       
+
+      cartItemsList.appendChild(listItem);
+    }
+  });
+
+  // Tính tổng số tiền
+  const totalPrice = cartItems.reduce((total, item) => {
+    // Kiểm tra xem đối tượng item tồn tại và có thuộc tính 'price' và 'quantity' không
+    if (item && item.price && item.quantity) {
+      return total + (item.price * item.quantity);
+    }
+    return total;
+  }, 0);
+
+  // Hiển thị tổng số tiền và số lượng sản phẩm trong form
+  totalAmount.textContent = totalPrice.toLocaleString() + ' đ';
+  document.getElementById('totalQuantity').textContent = cartItems.length.toString();
+
+  
+}
+  
+  // Gọi hàm updateCartItems khi tải xong trang và mỗi khi có thay đổi trong giỏ hàng
+  window.addEventListener('load', () => {
+    updateCartItems();
+    
+    // Bổ sung sự kiện 'storage' để cập nhật danh sách sản phẩm khi có thay đổi trong localStorage
+    window.addEventListener('storage', () => {
+      updateCartItems();
+    });
+  });
+</script>
